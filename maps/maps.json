@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Krat Central Station",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/krat_central_station.png"
+  },
+  {
+    "name": "Krat Central Station Plaza",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/krat_central_station_plaza.png"
+  },
+  {
+    "name": "Elysion Boulevard",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/elysion_boulevard.png"
+  },
+  {
+    "name": "Elysion Boulevard Alchemist Bridge",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/elysion_boulevard_alchemist_bridge.png"
+  },
+  {
+    "name": "Hotel Krat - Entrance",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/hotel_krat_entrance.png"
+  },
+  {
+    "name": "Hotel Krat - Main Floor",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/hotel_krat_main_floor.png"
+  },
+  {
+    "name": "Hotel Krat - Upper Floor",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/hotel_krat_upper_floor.png"
+  }
+]

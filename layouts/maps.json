@@ -1,0 +1,65 @@
+{
+  "maps": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Ch01",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "KCS",
+              "content": { "type": "map", "maps": ["Krat Central Station"] }
+            },
+            {
+              "title": "KCSP",
+              "content": {
+                "type": "map",
+                "maps": ["Krat Central Station Plaza"]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Ch02",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "EB",
+              "content": { "type": "map", "maps": ["Elysion Boulevard"] }
+            },
+            {
+              "title": "EB: Alchemist Bridge",
+              "content": {
+                "type": "map",
+                "maps": ["Elysion Boulevard Alchemist Bridge"]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Hotel Krat",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Entrance",
+              "content": { "type": "map", "maps": ["Hotel Krat - Entrance"] }
+            },
+            {
+              "title": "Main Floor",
+              "content": { "type": "map", "maps": ["Hotel Krat - Main Floor"] }
+            },
+            {
+              "title": "Upper Floor",
+              "content": { "type": "map", "maps": ["Hotel Krat - Upper Floor"] }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

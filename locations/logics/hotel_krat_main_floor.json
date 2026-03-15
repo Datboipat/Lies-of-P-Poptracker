@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Hotel Krat Main Floor - Locations",
+    "access_rules": ["key_central_station"],
+    "sections": [
+      {
+        "name": "table near Antonia",
+        "access_rules": []
+      }
+    ]
+  }
+]
