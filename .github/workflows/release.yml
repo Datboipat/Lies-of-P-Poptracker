@@ -1,0 +1,87 @@
+name: Auto Release on Merge to Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Create Tag & Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # 1. Checkout du code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Nécessaire pour lire tous les tags existants
+
+      # 2. Calcul du prochain tag (incrémente le patch : v0.0.1 → v0.0.2)
+      - name: Compute next version tag
+        id: version
+        run: |
+          # Récupère le dernier tag de type vX.Y.Z, ou démarre à v0.0.0
+          LATEST=$(git tag --list 'v*.*.*' --sort=-version:refname | head -n1)
+          if [ -z "$LATEST" ]; then
+            LATEST="v0.0.0"
+          fi
+
+          echo "Latest tag: $LATEST"
+
+          # Découpe les parties MAJOR.MINOR.PATCH
+          VERSION="${LATEST#v}"
+          MAJOR=$(echo "$VERSION" | cut -d. -f1)
+          MINOR=$(echo "$VERSION" | cut -d. -f2)
+          PATCH=$(echo "$VERSION" | cut -d. -f3)
+
+          # Incrémente le patch
+          PATCH=$((PATCH + 1))
+          NEW_TAG="v${MAJOR}.${MINOR}.${PATCH}"
+
+          echo "New tag: $NEW_TAG"
+          echo "new_tag=$NEW_TAG" >> "$GITHUB_OUTPUT"
+
+      # 3. Création du TAG sur le commit actuel
+      - name: Create Git tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "${{ steps.version.outputs.new_tag }}"
+          git push origin "${{ steps.version.outputs.new_tag }}"
+
+      # 4. Création du ZIP (sans .git et .github)
+      - name: Package ZIP
+        run: |
+          REPO_NAME="${{ github.event.repository.name }}"
+          TAG="${{ steps.version.outputs.new_tag }}"
+          ZIP_NAME="${REPO_NAME}-${TAG}.zip"
+
+          # Crée un ZIP à partir du contenu du repo (hors dossiers git/ci)
+          zip -r "$ZIP_NAME" . \
+            --exclude "*.git/*" \
+            --exclude "*.github/*"
+
+          echo "ZIP created: $ZIP_NAME"
+          echo "zip_name=$ZIP_NAME" >> "$GITHUB_ENV"
+
+      # 5. Création de la GitHub Release avec le ZIP en asset
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.new_tag }}
+          name: "Release ${{ steps.version.outputs.new_tag }}"
+          body: |
+            ## Lies of P — PopTracker Pack ${{ steps.version.outputs.new_tag }}
+
+            Automatic release generated on merge to `main`.
+
+            ### Installation
+            1. Download the ZIP below
+            2. Extract it into your PopTracker `packs` folder
+            3. Open PopTracker and load the pack
+          files: ${{ env.zip_name }}
+          draft: false
+          prerelease: false
