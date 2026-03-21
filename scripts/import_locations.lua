@@ -26,3 +26,23 @@ Tracker:AddLocations("locations/logics/ch02_elysion_boulevard.json")
 -- Elysion Boulevard - Alchemist Bridge
 Tracker:AddLocations("locations/ch02_elysion_boulevard_alchemist_bridge.json")
 Tracker:AddLocations("locations/logics/ch02_elysion_boulevard_alchemist_bridge.json")
+
+-- Krat City Hall
+Tracker:AddLocations("locations/krat_city_hall.json")
+Tracker:AddLocations("locations/logics/krat_city_hall.json")
+
+-- Ch03 - Workshop Union Entrance
+Tracker:AddLocations("locations/ch03_workshop_union_entrance.json")
+Tracker:AddLocations("locations/logics/ch03_workshop_union_entrance.json")
+
+-- Ch03 - Venigni's Workshop
+Tracker:AddLocations("locations/ch03_venigni_workshop.json")
+Tracker:AddLocations("locations/logics/ch03_venigni_workshop.json")
+
+-- Ch03 - Venigni Works Control Room
+Tracker:AddLocations("locations/ch03_venigni_works_control_room.json")
+Tracker:AddLocations("locations/logics/ch03_venigni_works_control_room.json")
+
+-- Ch03 - Workshop Union Culvert
+Tracker:AddLocations("locations/ch03_workshop_union_culvert.json")
+Tracker:AddLocations("locations/logics/ch03_workshop_union_culvert.json")
