@@ -40,5 +40,36 @@
     "location_size": 12,
     "location_border_thickness": 2,
     "img": "images/maps/hotel_krat_upper_floor.png"
+  },
+  {
+    "name": "Krat City Hall",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/krat_city_hall.png"
+  },
+  {
+    "name": "Workshop Union Entrance",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/workshop_union_entrance.png"
+  },
+  {
+    "name": "Workshop Union Culvert",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/workshop_union_culvert.png"
+  },
+  {
+    "name": "Venigni Works Control Room",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/venigni_works_control_room.png"
+  },
+  {
+    "name": "Venigni's Workshop",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/venigni_workshop.png"
   }
+
 ]
