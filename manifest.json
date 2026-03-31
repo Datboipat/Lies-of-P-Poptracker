@@ -1,22 +1,18 @@
 {
-    "name": "Lies Of P - Archipelago",
-    "game": "Lies Of P",
-    "package_version": "0.1.0",
-    "package_uid": "lies_of_p_ap",
-    "author": "Falqo",
-    "variants": {
-        "Map Tracker": {
-            "display_name": "Map Tracker",
-            "flags": [
-                "ap"
-            ]
-        },
-        "var_ItemsOnly": {
-            "display_name": "Items Only",
-            "flags": [
-                "ap"
-            ]
-        }
+  "name": "Lies Of P - Archipelago",
+  "game": "Lies Of P",
+  "package_version": "0.1.2",
+  "package_uid": "lies_of_p_ap",
+  "author": "Falqo",
+  "variants": {
+    "Map Tracker": {
+      "display_name": "Map Tracker",
+      "flags": ["ap"]
     },
-    "min_poptracker_version": "0.33.0"
+    "var_ItemsOnly": {
+      "display_name": "Items Only",
+      "flags": ["ap"]
+    }
+  },
+  "min_poptracker_version": "0.33.0"
 }

@@ -9,8 +9,6 @@ jobs:
   release:
     name: Create Tag & Release
     runs-on: ubuntu-latest
-    # Ignore les commits automatiques du bot pour éviter une boucle infinie
-    if: github.actor != 'github-actions[bot]'
     permissions:
       contents: write
 
@@ -19,66 +17,45 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Nécessaire pour lire tous les tags existants
-          token: ${{ secrets.RELEASE_TOKEN }} # PAT pour bypasser la protection de branche
+          fetch-depth: 0
 
-      # 2. Calcul du prochain tag (incrémente le patch : v0.0.1 → v0.0.2)
-      - name: Compute next version tag
+      # 2. Lecture de la version depuis manifest.json
+      - name: Read version from manifest.json
         id: version
         run: |
-          # Récupère le dernier tag de type vX.Y.Z, ou démarre à v0.0.0
-          LATEST=$(git tag --list 'v*.*.*' --sort=-version:refname | head -n1)
-          if [ -z "$LATEST" ]; then
-            LATEST="v0.0.0"
+          # Lit le champ package_version directement depuis le manifest.json
+          VERSION=$(jq -r '.package_version' manifest.json)
+          TAG="v${VERSION}"
+
+          echo "Version found in manifest.json: $VERSION"
+          echo "Tag: $TAG"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      # 3. Vérifie que ce tag n'existe pas déjà
+      - name: Check tag does not already exist
+        run: |
+          TAG="${{ steps.version.outputs.tag }}"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists — skipping release."
+            exit 1
           fi
 
-          echo "Latest tag: $LATEST"
-
-          # Découpe les parties MAJOR.MINOR.PATCH
-          VERSION="${LATEST#v}"
-          MAJOR=$(echo "$VERSION" | cut -d. -f1)
-          MINOR=$(echo "$VERSION" | cut -d. -f2)
-          PATCH=$(echo "$VERSION" | cut -d. -f3)
-
-          # Incrémente le patch
-          PATCH=$((PATCH + 1))
-          NEW_TAG="v${MAJOR}.${MINOR}.${PATCH}"
-
-          echo "New tag: $NEW_TAG"
-          echo "new_tag=$NEW_TAG" >> "$GITHUB_OUTPUT"
-
-      # 3. Mise à jour de la version dans manifest.json (uniquement pour le ZIP)
-      - name: Update version in manifest.json
-        run: |
-          NEW_VERSION="${{ steps.version.outputs.new_tag }}"
-          # Retire le "v" pour avoir uniquement X.Y.Z
-          VERSION_CLEAN="${NEW_VERSION#v}"
-
-          # Met à jour le champ "package_version" dans manifest.json
-          jq --arg v "$VERSION_CLEAN" '.package_version = $v' manifest.json > manifest.tmp.json
-          mv manifest.tmp.json manifest.json
-
-          echo "manifest.json updated to version $VERSION_CLEAN"
-
-      # 4. Commit du manifest.json mis à jour et création du TAG
-      - name: Commit manifest update & create Git tag
+      # 4. Création du TAG
+      - name: Create Git tag
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add manifest.json
-          git commit -m "chore: bump version to ${{ steps.version.outputs.new_tag }}"
-          git push origin main
-          git tag "${{ steps.version.outputs.new_tag }}"
-          git push origin "${{ steps.version.outputs.new_tag }}"
+          git tag "${{ steps.version.outputs.tag }}"
+          git push origin "${{ steps.version.outputs.tag }}"
 
       # 5. Création du ZIP (sans .git et .github)
       - name: Package ZIP
         run: |
           REPO_NAME="${{ github.event.repository.name }}"
-          TAG="${{ steps.version.outputs.new_tag }}"
+          TAG="${{ steps.version.outputs.tag }}"
           ZIP_NAME="${REPO_NAME}-${TAG}.zip"
 
-          # Crée un ZIP à partir du contenu du repo (hors dossiers git/ci)
           zip -r "$ZIP_NAME" . \
             --exclude "*.git/*" \
             --exclude "*.github/*"
@@ -90,10 +67,10 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.version.outputs.new_tag }}
-          name: "Release ${{ steps.version.outputs.new_tag }}"
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: "Release ${{ steps.version.outputs.tag }}"
           body: |
-            ## Lies of P — PopTracker Pack ${{ steps.version.outputs.new_tag }}
+            ## Lies of P — PopTracker Pack ${{ steps.version.outputs.tag }}
 
             Automatic release generated on merge to `main`.
 
