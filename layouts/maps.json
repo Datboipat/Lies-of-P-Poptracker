@@ -36,6 +36,37 @@
                 "type": "map",
                 "maps": ["Elysion Boulevard Alchemist Bridge"]
               }
+            },
+            {
+              "title": "KCH",
+              "content": { "type": "map", "maps": ["Krat City Hall"] }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Ch03",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "WUE",
+              "content": { "type": "map", "maps": ["Workshop Union Entrance"] }
+            },
+            {
+              "title": "VW",
+              "content": { "type": "map", "maps": ["Venigni's Workshop"] }
+            },
+            {
+              "title": "VW - Culvert",
+              "content": { "type": "map", "maps": ["Workshop Union Culvert"] }
+            },
+            {
+              "title": "VW - Control Room",
+              "content": {
+                "type": "map",
+                "maps": ["Venigni Works Control Room"]
+              }
             }
           ]
         }
