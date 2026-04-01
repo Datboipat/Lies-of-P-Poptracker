@@ -49,13 +49,14 @@ LOCATION_MAPPING = {
     [344] = { "@KCS Plaza - Locations/Legion Caliber" },
 
     -- =========================================================
-    -- Hotel Krat (IDs 25-29)
+    -- Hotel Krat
     -- =========================================================
     [ 25] = { "@Hotel Krat Entrance - Locations/wagon near fountain after Parade Master" },
     [ 26] = { "@Hotel Krat Entrance - Locations/wagon near dead-end after Parade Master" },
     [ 27] = { "@Hotel Krat Entrance - Locations/garden before Hotel Krat door" },
     [ 28] = { "@Hotel Krat Entrance - Locations/pile of corpses before Hotel Krat door" },
     [ 29] = { "@Hotel Krat Main Floor - Locations/table near Antonia" },
+    [ 79] = { "@Hotel Krat Upper Floor - Locations/from Gepetto after Scrapped Watchman" },
 
     -- =========================================================
     -- Elysion Boulevard (IDs 30-61)

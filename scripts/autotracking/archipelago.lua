@@ -1,6 +1,7 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/autotab_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/boss_tracking.lua")
 
 -- ============================================================
 -- Fonctions utilitaires
@@ -196,6 +197,7 @@ function onClear(slot_data)
 	Archipelago:SetNotify({ap_autotab})
 	Archipelago:Get({ap_autotab})
 
+	resetBossTracking()
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
 	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
@@ -303,6 +305,8 @@ function onLocation(location_id, location_name)
             elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
                 print(string.format("onLocation: could not find object for code %s", location_code))
             end
+            -- Boss tracking : vérifie si un boss est vaincu
+            onBossLocationCheck(location_id)
             -- AutoTab : change d'onglet selon la zone de la location cochée
             doAutoTab(location_id, location_code)
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then

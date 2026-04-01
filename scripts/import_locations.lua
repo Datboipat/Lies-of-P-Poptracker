@@ -18,6 +18,8 @@ Tracker:AddLocations("locations/hotel_krat_entrance.json")
 Tracker:AddLocations("locations/logics/hotel_krat_entrance.json")
 Tracker:AddLocations("locations/hotel_krat_main_floor.json")
 Tracker:AddLocations("locations/logics/hotel_krat_main_floor.json")
+Tracker:AddLocations("locations/hotel_krat_upper_floor.json")
+Tracker:AddLocations("locations/logics/hotel_krat_upper_floor.json")
 
 -- Elysion Boulevard
 Tracker:AddLocations("locations/ch02_elysion_boulevard.json")

@@ -5,6 +5,7 @@ Tracker:AddItems("items/upgrade.json")
 Tracker:AddItems("items/function.json")
 Tracker:AddItems("items/key.json")
 Tracker:AddItems("items/vessel.json")
+Tracker:AddItems("items/boss.json")
 
 Tracker:AddMaps("maps/maps.json")
 

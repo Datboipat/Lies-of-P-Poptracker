@@ -39,7 +39,10 @@
             },
             {
               "title": "KCH",
-              "content": { "type": "map", "maps": ["Krat City Hall"] }
+              "content": {
+                "type": "map",
+                "maps": ["Krat City Hall"]
+              }
             }
           ]
         }
