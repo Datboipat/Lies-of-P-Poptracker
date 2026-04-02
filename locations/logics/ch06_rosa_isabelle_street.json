@@ -1,0 +1,12 @@
+[
+  {
+    "name": "RIS - Locations",
+    "access_rules": ["key_rosa_isabelle"],
+    "sections": [
+      {
+        "name": "behind destructable objects near staircase",
+        "access_rules": []
+      }
+    ]
+  }
+]

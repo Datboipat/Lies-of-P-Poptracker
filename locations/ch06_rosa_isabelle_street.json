@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Rosa Isabelle Street",
+    "children": [
+      {
+        "name": "Fable Catalyst",
+        "sections": [
+          { "ref": "RIS - Locations/behind destructable objects near staircase" }
+        ],
+        "map_locations": [
+          { "map": "Rosa Isabelle Street", "x": 495, "y": 1810 }
+        ]
+      },
+      {
+        "name": "Radiant Ergo Fragment",
+        "sections": [{ "ref": "RIS - Locations/across from Gaspard Theatre" }],
+        "map_locations": [
+          { "map": "Rosa Isabelle Street", "x": 495, "y": 1730 }
+        ]
+      },
+      {
+        "name": "Cluster Grenade",
+        "sections": [
+          {
+            "ref": "RIS - Locations/downstairs near Old lady at the window"
+          }
+        ],
+        "map_locations": [
+          { "map": "Rosa Isabelle Street", "x": 500, "y": 1328 }
+        ]
+      }
+    ]
+  }
+]

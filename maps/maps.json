@@ -106,5 +106,17 @@
     "location_size": 12,
     "location_border_thickness": 2,
     "img": "images/maps/malum_district.png"
+  },
+  {
+    "name": "Rosa Isabelle Street",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/rosa_isabelle_street.png"
+  },
+  {
+    "name": "Estella Opera House",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/estella_opera_house.png"
   }
 ]
