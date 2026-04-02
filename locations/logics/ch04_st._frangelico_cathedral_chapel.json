@@ -44,6 +44,10 @@
         "access_rules": []
       },
       {
+        "name": "chest after elevator up the cathedral drop off",
+        "access_rules": []
+      },
+      {
         "name": "chest in a room that is exposed by draining decay pool",
         "access_rules": []
       },
