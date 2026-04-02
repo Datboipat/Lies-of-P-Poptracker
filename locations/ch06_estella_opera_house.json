@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Estella Opera House",
+    "children": [
+        {
+        "name": "Fable Catalyst",
+        "sections": [
+          { "ref": "EOH - Locations/" }
+        ],
+        "map_locations": [
+          { "map": "Estella Opera House", "x": 0, "y": 0 }
+        ]
+      }
+    ]
+  }
+]

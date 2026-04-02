@@ -121,6 +121,22 @@
         }
       },
       {
+        "title": "Ch06",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "RIS",
+              "content": { "type": "map", "maps": ["Rosa Isabelle Street"] }
+            },
+            {
+              "title": "EOH",
+              "content": { "type": "map", "maps": ["Estella Opera House"] }
+            }
+          ]
+        }
+      },
+      {
         "title": "Hotel Krat",
         "content": {
           "type": "tabbed",

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "EOH - Locations",
+    "access_rules": ["key_rosa_isabelle"],
+    "sections": [
+      {
+        "name": "",
+        "access_rules": []
+      }
+    ]
+  }
+]

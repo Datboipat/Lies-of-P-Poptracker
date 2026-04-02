@@ -72,3 +72,11 @@ Tracker:AddLocations("locations/logics/ch05_path_of_the_pilgrim.json")
 -- Ch05 - Malum District
 Tracker:AddLocations("locations/ch05_malum_district.json")
 Tracker:AddLocations("locations/logics/ch05_malum_district.json")
+
+-- Ch06 - Rosa Isabelle Street
+Tracker:AddLocations("locations/ch06_rosa_isabelle_street.json")
+Tracker:AddLocations("locations/logics/ch06_rosa_isabelle_street.json")
+
+-- Ch06 - Estella Opera House
+Tracker:AddLocations("locations/ch06_estella_opera_house.json")
+Tracker:AddLocations("locations/logics/ch06_estella_opera_house.json")
