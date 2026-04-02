@@ -280,3 +280,4 @@ LOCATION_MAPPING = {
     [211] = { "@St. Frangelico Cathedral Library - Locations/above St. Frangelico Cathedral Library stargazer" },
     [212] = { "@St. Frangelico Cathedral Library - Locations/Fallen Archbishop Andreus drop" },
     [213] = { "@St. Frangelico Cathedral Library - Locations/after the elevator from Archbishop" },
+}
