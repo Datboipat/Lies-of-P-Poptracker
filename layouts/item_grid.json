@@ -145,5 +145,45 @@
         ]
       }
     ]
+  },
+
+  "bosses": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0, 0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "4, 4",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "boss_parade_master",
+            "boss_scrapped_watchman",
+            "boss_fuoco",
+            "boss_andreus",
+            "boss_black_rabbit",
+            "boss_romeo"
+          ],
+          [
+            "boss_victor",
+            "boss_green_monster",
+            "boss_black_rabbit_2",
+            "boss_laxasia",
+            "boss_simon_manus",
+            "boss_nameless_puppet"
+          ],
+          [
+            "boss_tyrannical_predator",
+            "boss_markiona",
+            "boss_veronique",
+            "boss_two_faced_overseer",
+            "boss_premetamorphic_green_hunter",
+            "boss_anguished_guardian"
+          ],
+          ["boss_lumacchio", "boss_arlecchino"]
+        ]
+      }
+    ]
   }
 }
