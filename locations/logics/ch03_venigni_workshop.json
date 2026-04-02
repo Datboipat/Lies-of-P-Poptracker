@@ -1,7 +1,7 @@
 [
   {
     "name": "Venigni's Workshop - Locations",
-    "access_rules": ["key_cityhall_courtyard"],
+    "access_rules": ["key_cityhall_courtyard, boss_scrapped_watchman"],
     "sections": [
       {
         "name": "near Workshop Union Entrance stargazer",

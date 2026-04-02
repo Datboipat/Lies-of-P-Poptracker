@@ -1,7 +1,7 @@
 [
   {
     "name": "Hotel Krat Entrance - Locations",
-    "access_rules": ["key_central_station"],
+    "access_rules": ["key_central_station, boss_parade_master"],
     "sections": [
       {
         "name": "wagon near fountain after Parade Master",

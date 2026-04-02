@@ -58,6 +58,15 @@
                 "type": "layout",
                 "key": "vessels"
               }
+            },
+            {
+              "type": "group",
+              "header": "Bosses",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "bosses"
+              }
             }
           ]
         }

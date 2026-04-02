@@ -9,7 +9,7 @@
             "ref": "Krat City Hall - Locations/lamp near electric trap"
           }
         ],
-        "map_locations": [{ "map": "Krat City Hall", "x": 470, "y": 1565 }]
+        "map_locations": [{ "map": "Krat City Hall", "x": 445, "y": 1655 }]
       },
       {
         "name": "Dim Ergo Fragment",
@@ -18,7 +18,7 @@
             "ref": "Krat City Hall - Locations/after opening shortcut"
           }
         ],
-        "map_locations": [{ "map": "Krat City Hall", "x": 400, "y": 1290 }]
+        "map_locations": [{ "map": "Krat City Hall", "x": 378, "y": 1366 }]
       },
       {
         "name": "Vivid Ergo Fragment",
@@ -27,7 +27,7 @@
             "ref": "Krat City Hall - Locations/before opening shortcut"
           }
         ],
-        "map_locations": [{ "map": "Krat City Hall", "x": 320, "y": 1080 }]
+        "map_locations": [{ "map": "Krat City Hall", "x": 288, "y": 1160 }]
       },
       {
         "name": "Attribute Purification Ampoule",
@@ -36,7 +36,7 @@
             "ref": "Krat City Hall - Locations/corpse by a wagon"
           }
         ],
-        "map_locations": [{ "map": "Krat City Hall", "x": 670, "y": 1395 }]
+        "map_locations": [{ "map": "Krat City Hall", "x": 654, "y": 1474 }]
       },
       {
         "name": "Krat News Issue 1124",
@@ -45,7 +45,7 @@
             "ref": "Krat City Hall - Locations/left before Scrapped Watchman"
           }
         ],
-        "map_locations": [{ "map": "Krat City Hall", "x": 390, "y": 635 }]
+        "map_locations": [{ "map": "Krat City Hall", "x": 368, "y": 715 }]
       },
       {
         "name": "Puppet Destroyer's Amulet",
@@ -54,7 +54,7 @@
             "ref": "Krat City Hall - Locations/chest before Scrapped Watchman"
           }
         ],
-        "map_locations": [{ "map": "Krat City Hall", "x": 405, "y": 215 }]
+        "map_locations": [{ "map": "Krat City Hall", "x": 380, "y": 302 }]
       },
       {
         "name": "Venigni's Guide",
@@ -63,7 +63,7 @@
             "ref": "Krat City Hall - Locations/after Scrapped Watchman"
           }
         ],
-        "map_locations": [{ "map": "Krat City Hall", "x": 1360, "y": 250 }]
+        "map_locations": [{ "map": "Krat City Hall", "x": 1340, "y": 331 }]
       },
       {
         "name": "Scrapped Watchman",
@@ -84,7 +84,7 @@
             "ref": "Krat City Hall - Locations/Small Wooden Officer Puppet"
           }
         ],
-        "map_locations": [{ "map": "Krat City Hall", "x": 1366, "y": 433 }]
+        "map_locations": [{ "map": "Krat City Hall", "x": 1334, "y": 520 }]
       }
     ]
   }

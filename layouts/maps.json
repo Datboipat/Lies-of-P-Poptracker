@@ -75,6 +75,36 @@
         }
       },
       {
+        "title": "Ch04",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "MT",
+              "content": { "type": "map", "maps": ["MoonLight Town"] }
+            },
+            {
+              "title": "POM",
+              "content": { "type": "map", "maps": ["Path of Misery"] }
+            },
+            {
+              "title": "SFCC",
+              "content": {
+                "type": "map",
+                "maps": ["St. Frangelico Cathedral Chapel"]
+              }
+            },
+            {
+              "title": "SFCC - Library",
+              "content": {
+                "type": "map",
+                "maps": ["St. Frangelico Cathedral Library"]
+              }
+            }
+          ]
+        }
+      },
+      {
         "title": "Hotel Krat",
         "content": {
           "type": "tabbed",

@@ -1,7 +1,7 @@
 [
   {
     "name": "Krat City Hall - Locations",
-    "access_rules": ["key_cityhall"],
+    "access_rules": ["key_cityhall, boss_parade_master"],
     "sections": [
       {
         "name": "lamp near electric trap",
@@ -49,7 +49,7 @@
       },
       {
         "name": "after Scrapped Watchman",
-        "access_rules": []
+        "access_rules": ["boss_scrapped_watchman"]
       }
     ]
   }

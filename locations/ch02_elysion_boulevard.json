@@ -163,7 +163,7 @@
           }
         ],
         "map_locations": [
-          { "map": "Elysion Boulevard", "x": 1704, "y": 1013, "size": 5 }
+          { "map": "Elysion Boulevard", "x": 1704, "y": 1013 }
         ]
       },
       {
@@ -291,6 +291,14 @@
           }
         ],
         "map_locations": [{ "map": "Elysion Boulevard", "x": 2075, "y": 370 }]
+      },
+      {
+        "name": "Decrypted Crafted Cryptic Vessel",
+        "sections": [
+          {"ref": "Elysion Boulevard - Locations/quartz"},
+          {"ref": "Elysion Boulevard - Locations/Owl Doctor's Hunting Apparel"}
+        ],
+        "map_locations": [{ "map": "Elysion Boulevard", "x": 1968, "y": 712 }]
       }
     ]
   }

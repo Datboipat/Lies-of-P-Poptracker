@@ -59,7 +59,7 @@ LOCATION_MAPPING = {
     [ 79] = { "@Hotel Krat Upper Floor - Locations/from Gepetto after Scrapped Watchman" },
 
     -- =========================================================
-    -- Elysion Boulevard (IDs 30-61)
+    -- Elysion Boulevard (IDs 30-61, 194-195)
     -- =========================================================
     [ 30] = { "@Elysion Boulevard - Locations/bench on lower platform" },
     [ 31] = { "@Elysion Boulevard - Locations/wagon with ambush from above" },
@@ -93,6 +93,8 @@ LOCATION_MAPPING = {
     [ 59] = { "@Elysion Boulevard - Locations/red boxes after Police Puppet" },
     [ 60] = { "@Elysion Boulevard - Locations/Infront of shortcut to Toma" },
     [ 61] = { "@Elysion Boulevard - Locations/electric trap before Mad Donkey" },
+    [194] = { "@Elysion Boulevard - Locations/quartz" },
+    [195] = { "@Elysion Boulevard - Locations/Owl Doctor's Hunting Apparel" },
 
     -- =========================================================
     -- Elysion Boulevard Alchemist Bridge (IDs 62-66)
@@ -195,3 +197,87 @@ LOCATION_MAPPING = {
     [146] = { "@Venigni Works Control Room - Locations/King's Flame Ergo" },
     [147] = { "@Venigni Works Control Room - Locations/Flame Grindstone" },
     
+    -- =========================================================
+    -- MoonLight Town (IDs 148-168)
+    -- =========================================================
+
+    [148] = { "@MoonLight Town - Locations/tunnel leaving Venigni Works" },
+    [149] = { "@MoonLight Town - Locations/behind boxes before the mines" },
+    [150] = { "@MoonLight Town - Locations/minecart" },
+    [151] = { "@MoonLight Town - Locations/scaffolding after the mines" },
+    [152] = { "@MoonLight Town - Locations/behind box on scaffolding" },
+    [153] = { "@MoonLight Town - Locations/chest on top of scaffolding" },
+    [154] = { "@MoonLight Town - Locations/pit near explosive barrels" },
+    [155] = { "@MoonLight Town - Locations/before wood wall that a Puppet breaks" },
+    [156] = { "@MoonLight Town - Locations/Inside wood wall the Puppet breaks down" },
+    [157] = { "@MoonLight Town - Locations/Shovel elite enemy drop" },
+    [158] = { "@MoonLight Town - Locations/dropdown near fallen tree" },
+    [159] = { "@MoonLight Town - Locations/well" },
+    [160] = { "@MoonLight Town - Locations/shack near a campfire" },
+    [161] = { "@MoonLight Town - Locations/collapsing bridge" },
+    [162] = { "@MoonLight Town - Locations/first Red Butterfly drop" },
+    [163] = { "@MoonLight Town - Locations/second Red Butterfly drop" },
+    [164] = { "@MoonLight Town - Locations/gravestone after the Red Butterflies" },
+    [165] = { "@MoonLight Town - Locations/chest, ambush with locked gate" },
+    [166] = { "@MoonLight Town - Locations/on the ground, ambush with locked gate" },
+    [167] = { "@MoonLight Town - Locations/lever to open the gate" },
+    [168] = { "@MoonLight Town - Locations/gravestone before Atoned" },
+
+    -- =========================================================
+    -- Path of Misery (IDs 169-177)
+    -- =========================================================
+
+    [169] = { "@Path of Misery - Locations/shack after carcass cutscene" },
+    [170] = { "@Path of Misery - Locations/shack towards collapsing bridge" },
+    [171] = { "@Path of Misery - Locations/before collapsing bridge" },
+    [172] = { "@Path of Misery - Locations/corner behind some destructable boxes" },
+    [173] = { "@Path of Misery - Locations/statue you can pray to" },
+    [174] = { "@Path of Misery - Locations/bench inside of the church" },
+    [175] = { "@Path of Misery - Locations/chest behind Giango" },
+    [176] = { "@Path of Misery - Locations/right side of bridge to St. Frangelico Cathedral Chapel" },
+    [177] = { "@Path of Misery - Locations/end of bridge to St. Frangelico Cathedral Chapel" },
+
+    -- =========================================================
+    -- St. Frangelico Cathedral Chapel (IDs 178-193)
+    -- =========================================================
+
+    [178] = { "@St. Frangelico Cathedral Chapel - Locations/seat infront of organ" },
+    [179] = { "@St. Frangelico Cathedral Chapel - Locations/opposite the ladder into the Cathedral" },
+    [180] = { "@St. Frangelico Cathedral Chapel - Locations/decay pool at the bottom of the Cathedral" },
+    [181] = { "@St. Frangelico Cathedral Chapel - Locations/drop down after some destructable objects" },
+    [182] = { "@St. Frangelico Cathedral Chapel - Locations/second drop down after some destructable objects" },
+    [183] = { "@St. Frangelico Cathedral Chapel - Locations/small wooden beam" },
+    [184] = { "@St. Frangelico Cathedral Chapel - Locations/Dead-end after a Carcass enemy breaks down wall" },
+    [185] = { "@St. Frangelico Cathedral Chapel - Locations/up on a wooden catwalk" },
+    [186] = { "@St. Frangelico Cathedral Chapel - Locations/near lever to flip the direction of the elevator" },
+    [187] = { "@St. Frangelico Cathedral Chapel - Locations/chest after water wheel drop off" },
+    [188] = { "@St. Frangelico Cathedral Chapel - Locations/chest in a room that is exposed by draining decay pool" },
+    [189] = { "@St. Frangelico Cathedral Chapel - Locations/chest after elevator up the cathedral drop off" },
+    [190] = { "@St. Frangelico Cathedral Chapel - Locations/corpse near Shielded Carcass elite" },
+    [191] = { "@St. Frangelico Cathedral Chapel - Locations/Shielded Carcass elite enemy drop" },
+    [192] = { "@St. Frangelico Cathedral Chapel - Locations/up ladder near Shielded Carcass elite" },
+    [193] = { "@St. Frangelico Cathedral Chapel - Locations/chest inside a cell" },
+
+    -- =========================================================
+    -- St. Frangelico Cathedral Library (IDs 196-213)
+    -- =========================================================
+
+    [196] = { "@St. Frangelico Cathedral Library - Locations/next to St. Frangelico Cathedral Library stargazer" },
+    [197] = { "@St. Frangelico Cathedral Library - Locations/Purple Butterfly drop" },
+    [198] = { "@St. Frangelico Cathedral Library - Locations/behind a pillar near Purple Butterfly" },
+    [199] = { "@St. Frangelico Cathedral Library - Locations/chest near Purple Butterfly" },
+    [200] = { "@St. Frangelico Cathedral Library - Locations/before shortcut door near Purple Butterfly" },
+    [201] = { "@St. Frangelico Cathedral Library - Locations/room with decay falling from above" },
+    [202] = { "@St. Frangelico Cathedral Library - Locations/across the bridge" },
+    [203] = { "@St. Frangelico Cathedral Library - Locations/altar near decay pool" },
+    [204] = { "@St. Frangelico Cathedral Library - Locations/inside decay pool" },
+    [205] = { "@St. Frangelico Cathedral Library - Locations/between a staircase and bookcase" },
+    [206] = { "@St. Frangelico Cathedral Library - Locations/balcony" },
+    [207] = { "@St. Frangelico Cathedral Library - Locations/altar near two angel statues" },
+    [208] = { "@St. Frangelico Cathedral Library - Locations/safe near two angel statues" },
+    [209] = { "@St. Frangelico Cathedral Library - Locations/dead-end with decay falling from ceiling" },
+    [210] = { "@St. Frangelico Cathedral Library - Locations/altar near shortcut Archbishop" },
+    [211] = { "@St. Frangelico Cathedral Library - Locations/above St. Frangelico Cathedral Library stargazer" },
+    [212] = { "@St. Frangelico Cathedral Library - Locations/Fallen Archbishop Andreus drop" },
+    [213] = { "@St. Frangelico Cathedral Library - Locations/after the elevator from Archbishop" },
+}

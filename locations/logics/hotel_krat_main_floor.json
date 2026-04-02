@@ -1,7 +1,7 @@
 [
   {
     "name": "Hotel Krat Main Floor - Locations",
-    "access_rules": ["key_central_station"],
+    "access_rules": ["key_central_station, boss_parade_master"],
     "sections": [
       {
         "name": "table near Antonia",

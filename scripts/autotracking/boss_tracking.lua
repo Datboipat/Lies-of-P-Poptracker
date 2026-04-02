@@ -57,8 +57,12 @@ local function checkBoss(boss_code)
 
     -- Tous les drops sont cochés → boss vaincu
     local obj = Tracker:FindObjectForCode(boss_code)
-    if obj and not obj.Active then
-        obj.Active = true
+    if obj then
+        if obj.Type == "toggle" and not obj.Active then
+            obj.Active = true
+        elseif obj.Type == "consumable" and obj.AcquiredCount == 0 then
+            obj.AcquiredCount = 1
+        end
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("[BossTracking] Boss defeated: %s", boss_code))
         end
@@ -84,7 +88,11 @@ function resetBossTracking()
     for boss_code, _ in pairs(BOSS_DROP_IDS) do
         local obj = Tracker:FindObjectForCode(boss_code)
         if obj then
-            obj.Active = false
+            if obj.Type == "toggle" then
+                obj.Active = false
+            elseif obj.Type == "consumable" then
+                obj.AcquiredCount = 0
+            end
         end
     end
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then

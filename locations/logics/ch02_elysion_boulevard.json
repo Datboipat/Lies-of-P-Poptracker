@@ -1,7 +1,7 @@
 [
   {
     "name": "Elysion Boulevard - Locations",
-    "access_rules": ["key_central_station"],
+    "access_rules": ["key_central_station, boss_parade_master"],
     "sections": [
       { "name": "bench on lower platform", "access_rules": [] },
       { "name": "wagon with ambush from above", "access_rules": [] },
@@ -117,6 +117,14 @@
       {
         "name": "wagon at end of the bridge",
         "access_rules": []
+      },
+      {
+        "name": "quartz",
+        "access_rules": ["cv_dottedpaper_01"]
+      },
+      {
+        "name": "Owl Doctor's Hunting Apparel",
+        "access_rules": ["cv_dottedpaper_01"]
       }
     ]
   }

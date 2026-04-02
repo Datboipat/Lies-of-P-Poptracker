@@ -70,5 +70,29 @@
     "location_size": 12,
     "location_border_thickness": 2,
     "img": "images/maps/venigni_workshop.png"
+  },
+  {
+    "name": "MoonLight Town",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/moonlight_town.png"
+  },
+  {
+    "name": "Path of Misery",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/path_of_misery.png"
+  },
+  {
+    "name": "St. Frangelico Cathedral Chapel",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/st_frangelico_cathedral_chapel.png"
+  },
+  {
+    "name": "St. Frangelico Cathedral Library",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/st._frangelico_cathedral_library.png"
   }
 ]

@@ -48,3 +48,19 @@ Tracker:AddLocations("locations/logics/ch03_venigni_works_control_room.json")
 -- Ch03 - Workshop Union Culvert
 Tracker:AddLocations("locations/ch03_workshop_union_culvert.json")
 Tracker:AddLocations("locations/logics/ch03_workshop_union_culvert.json")
+
+-- Ch04 - MoonLight Town
+Tracker:AddLocations("locations/ch04_moonlight_town.json")
+Tracker:AddLocations("locations/logics/ch04_moonlight_town.json")
+
+-- Ch04 - Path of Misery
+Tracker:AddLocations("locations/ch04_path_of_misery.json")
+Tracker:AddLocations("locations/logics/ch04_path_of_misery.json")
+
+-- Ch04 - St. Frangelico Cathedral Chapel
+Tracker:AddLocations("locations/ch04_st._frangelico_cathedral_chapel.json")
+Tracker:AddLocations("locations/logics/ch04_st._frangelico_cathedral_chapel.json")
+
+-- Ch04 - St. Frangelico Cathedral Library
+Tracker:AddLocations("locations/ch04_st._frangelico_cathedral_library.json")
+Tracker:AddLocations("locations/logics/ch04_st._frangelico_cathedral_library.json")

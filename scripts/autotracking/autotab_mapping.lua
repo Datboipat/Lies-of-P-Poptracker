@@ -16,19 +16,27 @@
 
 -- Mapping par préfixe de code de section
 AUTOTAB_PREFIX_MAP = {
-    ["@KCS Plaza - Locations/"] = { "Ch01",       "KCSP"       },
-    ["@KCS - Locations/"]       = { "Ch01",       "KCS"        },
-    ["@Hotel Krat Entrance - Locations/"] = { "Hotel Krat", "Entrance"   },
-    ["@Hotel Krat Main Floor - Locations/"]= { "Hotel Krat", "Main Floor" },
-    ["@Hotel Krat Upper Floor - Locations/"] = { "Hotel Krat", "Upper Floor"  },
-    ["@Elysion Boulevard - Locations/"] = { "Ch02", "EB" },
-    ["@Elysion Boulevard Alchemist Bridge - Locations/"] = { "Ch02", "EB: Alchemist Bridge" },
-    ["@Venigni Works Control Room - Locations/"] = { "Ch03", "VW - Control Room" },
-    ["@Workshop Union Culvert - Locations/"] = { "Ch03", "VW - Culvert" },
-    ["@Krat City Hall - Locations/"] = { "Ch03", "Krat City Hall" },
-    ["@Workshop Union Entrance - Locations/"] = { "Ch03", "Workshop Union Entrance" },
-    ["@Venigni's Workshop - Locations/"] = { "Ch03", "Venigni's Workshop" },
-    
+    -- Ch01
+    ["@KCS Plaza - Locations/"]                           = { "Ch01",       "KCSP"            },
+    ["@KCS - Locations/"]                                 = { "Ch01",       "KCS"             },
+    -- Ch02
+    ["@Elysion Boulevard Alchemist Bridge - Locations/"]  = { "Ch02",       "EB: Alchemist Bridge" },
+    ["@Elysion Boulevard - Locations/"]                   = { "Ch02",       "EB"              },
+    ["@Krat City Hall - Locations/"]                      = { "Ch02",       "KCH"             },
+    -- Ch03
+    ["@Workshop Union Entrance - Locations/"]             = { "Ch03",       "WUE"             },
+    ["@Venigni's Workshop - Locations/"]                  = { "Ch03",       "VW"              },
+    ["@Workshop Union Culvert - Locations/"]              = { "Ch03",       "VW - Culvert"    },
+    ["@Venigni Works Control Room - Locations/"]          = { "Ch03",       "VW - Control Room" },
+    -- Ch04
+    ["@MoonLight Town - Locations/"]                      = { "Ch04",       "MT"              },
+    ["@Path of Misery - Locations/"]                      = { "Ch04",       "POM"             },
+    ["@St. Frangelico Cathedral Chapel - Locations/"]     = { "Ch04",       "SFCC"            },
+    ["@St. Frangelico Cathedral Library - Locations/"]    = { "Ch04",       "SFCC - Library"  },
+    -- Hotel Krat
+    ["@Hotel Krat Entrance - Locations/"]                 = { "Hotel Krat", "Entrance"        },
+    ["@Hotel Krat Main Floor - Locations/"]               = { "Hotel Krat", "Main Floor"      },
+    ["@Hotel Krat Upper Floor - Locations/"]              = { "Hotel Krat", "Upper Floor"     },
 }
 
 -- Surcharge par location_id (utile quand plusieurs floors partagent le même préfixe)
