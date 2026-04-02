@@ -3,8 +3,8 @@
     "name": "St. Frangelico Cathedral Chapel - Locations",
     "access_rules": ["key_cityhall_courtyard"],
     "sections": [
-        {
-        "name": "seat in front of organ",
+      {
+        "name": "seat infront of organ",
         "access_rules": []
       },
       {
@@ -68,5 +68,5 @@
         "access_rules": []
       }
     ]
-}
+  }
 ]
